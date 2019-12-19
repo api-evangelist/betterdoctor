@@ -1,0 +1,995 @@
+{
+    "id": "9d0c3083aaed2ba656ca1d6539e0938b",
+    "name": "BetterDoctor",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "af02bd1a619a8d453695663aab0aba3a",
+            "name": "Doctor search",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/doctors",
+            "description": "Doctor search",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The doctor's name; searches in both first and last names. Partial (type-ahead) characters\/names are accepted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "first_name",
+                    "description": "The doctor's first name; partial (type-ahead) characters\/names are accepted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "last_name",
+                    "description": "The doctor's last name; partial (type-ahead) characters\/names are accepted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "Search all fields by a keyword query (e.g. 'Toothache').",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "specialty_uid",
+                    "description": "UID of a specialty (e.g. 'pediatrician'); will accept a comma-separated list of multiple specialties.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "insurance_uid",
+                    "description": "UID of an insurance plan (e.g. 'aetna-aetnabasichmo'); will accept a comma-separated list of multiple insurances.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "practice_uid",
+                    "description": "BetterDoctor Practice UID. Supplying this parameter will return only doctors linked to that practice.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "location",
+                    "description": "Search area - Either Circular (lat,lon,range (miles)) or Bounding box (top-right, bottom-left) (lat,lon,lat,lon). Location slugs (ca-berkeley) are also accepted. Slugs are returned as part of the doctor's practices. For convenience we also support state (ny or NY) postal codes.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_location",
+                    "description": "User's current location. (lat, lon). This impacts ordering of practices in results, and determines each value of [practice].distance.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "gender",
+                    "description": "The doctor's gender ('male' or 'female').",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort order for the search results ('full-name-asc': Alphabetical sort by full provider name ascending. 'full-name-desc': Alphabetical sort by full provider name descending. 'last-name-asc': Alphabetical sort by provider's last name ascending. 'last-name-desc': Alphabetical sort by provider's last name descending. 'first-name-asc': Alphabetical sort by provider's first name ascending. 'first-name-desc': Alphabetical sort by provider's first name descending. 'best-match-asc': Sort by BetterDoctor'",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "60a368292baa5eed9b46893a30bdaf74",
+            "name": "Retrieve a specific doctor description",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/doctors\/{uid}",
+            "description": "Returns a doctor object based on an uid or a slug",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uid",
+                    "description": "BetterDoctor Doctor UID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e75ada90507ed0ab9f904f8cd994600",
+            "name": "Retrieve a specific doctor description using NPI",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/doctors\/npi\/{npi}",
+            "description": "Returns a doctor object using NPI",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "npi",
+                    "description": "The National Provider Identifier of the doctor to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "bf6f359596c793e5e515d34a8512947b",
+            "name": "Practice Search",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices",
+            "description": "Results are provider service locations, commonly referred as practices or doctor's offices.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The doctor's name; searches in both first and last names. Partial (type-ahead) characters\/names are accepted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "location",
+                    "description": "Search area - Either Circular (lat,lon,range (miles)) or Bounding box (top-right, bottom-left) (lat,lon,lat,lon). Location slugs (ca-berkeley) are also accepted. Slugs are returned as part of the doctor's practices. For convenience we also support state (ny or NY) postal codes.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_location",
+                    "description": "User's current location. (lat, lon). This impacts ordering of practices in results, and determines each value of [practice].distance.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort order for the search results ('full-name-asc': Alphabetical sort by full provider name ascending. 'full-name-desc': Alphabetical sort by full provider name descending. 'last-name-asc': Alphabetical sort by provider's last name ascending. 'last-name-desc': Alphabetical sort by provider's last name descending. 'first-name-asc': Alphabetical sort by provider's first name ascending. 'first-name-desc': Alphabetical sort by provider's first name descending. 'best-match-asc': Sort by BetterDoctor'",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "57df2378644a029df4ee7ad3bef623a3",
+            "name": "Retrieve a specific practice description",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices\/{uid}",
+            "description": "Returns a practice object based on an uid or a slug",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uid",
+                    "description": "BetterDoctor Doctor UID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ce53ba2c5d26b57945ca90f2cc80c66",
+            "name": "Retrieve a specific practice description using NPI",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices\/npi\/{npi}",
+            "description": "Returns a practice object based on an NPI. The office returned is registered in the NPI directory. There may be additional offices with this NPI registered at this location. Use the \/practices search to find additional locations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "npi",
+                    "description": "The National Provider Identifier of the doctor to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "362db7a4f1db4faf6a66e417e226616e",
+            "name": "Retrieve a list of doctors in this practice.",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices\/{uid}\/doctors",
+            "description": "Returns a paginated list of doctors in the specified practice. This is a convenience endpoint, you may also use \/doctors search for all doctors.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uid",
+                    "description": "BetterDoctor Doctor UID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "edc52dda31a4b7246ad4797e20be2ace",
+            "name": "Retrieve a list of doctors in this practice using NPI",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices\/npi\/{npi}\/doctors",
+            "description": "Returns a paginated list of doctors in the specified practice. This is a convenience endpoint, you may also use \/doctors search for all doctors.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "npi",
+                    "description": "The National Provider Identifier of the doctor to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "28abd98b0d2f2be365b1ea8204e71ff2",
+            "name": "Retrieve a list of all specialties",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/specialties",
+            "description": "Specialty group list",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "f79e3b999a5b2afbc2b61b64a0a89656",
+            "name": "Retrieve insurance providers and plans",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/insurances",
+            "description": "Insurance provider & plan list",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "7036d8b1c9252b55e9cfa41460c84a8e",
+            "name": "Retrieve a list of known conditions",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/conditions",
+            "description": "List all conditions",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fields",
+                    "description": "A comma-separated list of fields to include. You may use nested fields, e.g.: field1,field2(subfield,subfield2).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "dfae2905368b7e3aee38985aaf71dc8a",
+            "name": "Add a new record",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations",
+            "description": "Creates validation document using the request body, and returns the document created with unique identifier in Location header for reference. This is how validation data is submitted to BetterDoctor for addition to the API. The posted document must conform to BetterDoctor???s JSON schema for validation objects, see included model specification for more information. <br><h4 style='margin-bottom: 0px !important;'> Return Headers <\/h4> <div>Location: The uid of the created document. This can be use",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "validation",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "bf256ad9d18c5c243e32b5d8176afa63",
+            "name": "Record search",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations",
+            "description": "The endpoint can be used to identify providers with validation data. The search supports BetterDoctor unique provider identifier, National Provider Identifier (NPI) or reference uid based provider lookups. BetterDoctor identifiers and NPIs for doctors and practices can be discovered using BetterDoctor API???s search functionalities. <br><h4 style='margin-bottom: 0px !important;'> Return Headers <\/h4> <div>Last-Modified: Timestamp of the last validation made over the matching validations. The val",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "data_type",
+                    "description": "Provider type to search validations for. For example ???Doctor??? or ???Practice???.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "data_uid",
+                    "description": "Paired with data_type. Unique object identifier for the provider type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "npi",
+                    "description": "Paired with data_type. National Provider Identifier (NPI) for the given provider type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ref_uid",
+                    "description": "Optional to data_type style queries. Reference uid for the validation context, usually 3rd party reference uid provided upon creation of the validation document",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "since",
+                    "description": "Limits validations returned to the validations after the given timestamp value (ISO 8601). Equivalent to using If-Modified-Since HTTP header.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validation_method",
+                    "description": "Limits validations returned to a validation method wanted. For example ???call??? or ???online???.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "3fd819722dc7133525adafef4d64c886",
+            "name": "Check if new records exists",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations",
+            "description": "The endpoint can be used to identify providers with validation data, and discover changes. It providers search functionalities like its GET method alternative, but does not return any validation data. Instead of the data itself, it returns 200 OK if matching validation documents based on the given query are found. And it returns 304 if no validation documents are found after the timestamp given using If-Modified-Since HTTP header or since parameter. <br><h4 style='margin-bottom: 0px !important;'",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "head",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "data_type",
+                    "description": "Provider type to search validations for. For example ???Doctor??? or ???Practice???.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "data_uid",
+                    "description": "Paired with data_type. Unique object identifier for the provider type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "npi",
+                    "description": "Paired with data_type. National Provider Identifier (NPI) for the given provider type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ref_uid",
+                    "description": "Optional to data_type style queries. Reference uid for the validation context, usually 3rd party reference uid provided upon creation of the validation document",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "since",
+                    "description": "Limits validations returned to the validations after the given timestamp value (ISO 8601). Equivalent to using If-Modified-Since HTTP header.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validation_method",
+                    "description": "Limits validations returned to a validation method wanted. For example ???call??? or ???online???.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "skip",
+                    "description": "For paginated list operations; specifies the zero-based start index of the first item to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "For paginated list operations; specifies the maximum number of items to retrieve. Maximum value of limit is 100. Values greater than maximum value get converted to the maximum value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "7e3e4ea59358151cb3e7b1555b278896",
+            "name": "Retrieve a specific record",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations\/{uid}",
+            "description": "Returns requested validation document. The endpoint is a conveniece method to check status and accepted data of a specific validation, like after creation of a validation. The response consist of raw data from the validation event and related validation information. <br><h4 style='margin-bottom: 0px !important;'> Return Headers <\/h4> <div>Last-Modified: Timestamp of the validation made.<\/div>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uid",
+                    "description": "BetterDoctor Doctor UID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "aef19b787fad02a4c7bd51db8c585f20",
+            "name": "Check if a specific record exists",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations\/{uid}",
+            "description": "The endpoint can be used to discover if a validation document exists in the API. <br><h4 style='margin-bottom: 0px !important;'> Return Headers <\/h4> <div>Last-Modified: Timestamp of the validation made.<\/div>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "head",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "uid",
+                    "description": "BetterDoctor Doctor UID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        },
+        {
+            "id": "ef240525545c8f9ed7533d2311005f83",
+            "name": "API Health Check",
+            "url": "httpsapi.betterdoctor.com\/2016-03-01\/info",
+            "description": "Returns basic API health information for monitoring",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "user_key",
+                    "description": "Your API access key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "rawModeData": ""
+        }
+    ]
+}
