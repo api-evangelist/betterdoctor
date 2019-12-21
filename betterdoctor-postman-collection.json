@@ -1,5 +1,5 @@
 {
-    "id": "9d0c3083aaed2ba656ca1d6539e0938b",
+    "id": "48caf06c093cf0b2942fcfe6fd7bc182",
     "name": "BetterDoctor",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "af02bd1a619a8d453695663aab0aba3a",
+            "id": "51cbf86ed829358154b318f12bdf3de6",
             "name": "Doctor search",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/doctors",
             "description": "Doctor search",
@@ -135,11 +135,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "60a368292baa5eed9b46893a30bdaf74",
+            "id": "49bd7155b06f4539d0d510a009ee308f",
             "name": "Retrieve a specific doctor description",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/doctors\/{uid}",
             "description": "Returns a doctor object based on an uid or a slug",
@@ -180,11 +180,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "3e75ada90507ed0ab9f904f8cd994600",
+            "id": "0061b6051d0589fc768c9418ba7b6a9c",
             "name": "Retrieve a specific doctor description using NPI",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/doctors\/npi\/{npi}",
             "description": "Returns a doctor object using NPI",
@@ -225,11 +225,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "bf6f359596c793e5e515d34a8512947b",
+            "id": "93f6807810f3d73f0c25516f26558bba",
             "name": "Practice Search",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices",
             "description": "Results are provider service locations, commonly referred as practices or doctor's offices.",
@@ -305,11 +305,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "57df2378644a029df4ee7ad3bef623a3",
+            "id": "1e604fa497977e7adc74ed0a37d7e668",
             "name": "Retrieve a specific practice description",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices\/{uid}",
             "description": "Returns a practice object based on an uid or a slug",
@@ -350,11 +350,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "9ce53ba2c5d26b57945ca90f2cc80c66",
+            "id": "0af2d981e7f616de28731221afb70bbb",
             "name": "Retrieve a specific practice description using NPI",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices\/npi\/{npi}",
             "description": "Returns a practice object based on an NPI. The office returned is registered in the NPI directory. There may be additional offices with this NPI registered at this location. Use the \/practices search to find additional locations.",
@@ -395,11 +395,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "362db7a4f1db4faf6a66e417e226616e",
+            "id": "531396bbc6d750a6ce43842817793f96",
             "name": "Retrieve a list of doctors in this practice.",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices\/{uid}\/doctors",
             "description": "Returns a paginated list of doctors in the specified practice. This is a convenience endpoint, you may also use \/doctors search for all doctors.",
@@ -454,11 +454,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "edc52dda31a4b7246ad4797e20be2ace",
+            "id": "19879158e7067bebe844449ed5bc5296",
             "name": "Retrieve a list of doctors in this practice using NPI",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/practices\/npi\/{npi}\/doctors",
             "description": "Returns a paginated list of doctors in the specified practice. This is a convenience endpoint, you may also use \/doctors search for all doctors.",
@@ -513,11 +513,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "28abd98b0d2f2be365b1ea8204e71ff2",
+            "id": "c69b3f66d642238a746cd81a00684259",
             "name": "Retrieve a list of all specialties",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/specialties",
             "description": "Specialty group list",
@@ -565,11 +565,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "f79e3b999a5b2afbc2b61b64a0a89656",
+            "id": "50ff4e79007fe2046749b4a0e2eade17",
             "name": "Retrieve insurance providers and plans",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/insurances",
             "description": "Insurance provider & plan list",
@@ -617,11 +617,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "7036d8b1c9252b55e9cfa41460c84a8e",
+            "id": "ad006fea2e3b438c64e4b6f53636558f",
             "name": "Retrieve a list of known conditions",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/conditions",
             "description": "List all conditions",
@@ -669,11 +669,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "dfae2905368b7e3aee38985aaf71dc8a",
+            "id": "193582e5af49bca21d0f5f5245f3149f",
             "name": "Add a new record",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations",
             "description": "Creates validation document using the request body, and returns the document created with unique identifier in Location header for reference. This is how validation data is submitted to BetterDoctor for addition to the API. The posted document must conform to BetterDoctor???s JSON schema for validation objects, see included model specification for more information. <br><h4 style='margin-bottom: 0px !important;'> Return Headers <\/h4> <div>Location: The uid of the created document. This can be use",
@@ -707,11 +707,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "bf256ad9d18c5c243e32b5d8176afa63",
+            "id": "cda42e90d0440648d4412c9891c3ae1f",
             "name": "Record search",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations",
             "description": "The endpoint can be used to identify providers with validation data. The search supports BetterDoctor unique provider identifier, National Provider Identifier (NPI) or reference uid based provider lookups. BetterDoctor identifiers and NPIs for doctors and practices can be discovered using BetterDoctor API???s search functionalities. <br><h4 style='margin-bottom: 0px !important;'> Return Headers <\/h4> <div>Last-Modified: Timestamp of the last validation made over the matching validations. The val",
@@ -794,11 +794,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "3fd819722dc7133525adafef4d64c886",
+            "id": "ade8ad6724f69411ba0278bb112d1b40",
             "name": "Check if new records exists",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations",
             "description": "The endpoint can be used to identify providers with validation data, and discover changes. It providers search functionalities like its GET method alternative, but does not return any validation data. Instead of the data itself, it returns 200 OK if matching validation documents based on the given query are found. And it returns 304 if no validation documents are found after the timestamp given using If-Modified-Since HTTP header or since parameter. <br><h4 style='margin-bottom: 0px !important;'",
@@ -881,11 +881,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "7e3e4ea59358151cb3e7b1555b278896",
+            "id": "b3e072277d90becdd012304923e866bc",
             "name": "Retrieve a specific record",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations\/{uid}",
             "description": "Returns requested validation document. The endpoint is a conveniece method to check status and accepted data of a specific validation, like after creation of a validation. The response consist of raw data from the validation event and related validation information. <br><h4 style='margin-bottom: 0px !important;'> Return Headers <\/h4> <div>Last-Modified: Timestamp of the validation made.<\/div>",
@@ -919,11 +919,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "aef19b787fad02a4c7bd51db8c585f20",
+            "id": "25a773ec8789312649ea654033c384c2",
             "name": "Check if a specific record exists",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/validations\/{uid}",
             "description": "The endpoint can be used to discover if a validation document exists in the API. <br><h4 style='margin-bottom: 0px !important;'> Return Headers <\/h4> <div>Last-Modified: Timestamp of the validation made.<\/div>",
@@ -957,11 +957,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         },
         {
-            "id": "ef240525545c8f9ed7533d2311005f83",
+            "id": "0bf2defcaf2d9d76738e7637c06d3ad2",
             "name": "API Health Check",
             "url": "httpsapi.betterdoctor.com\/2016-03-01\/info",
             "description": "Returns basic API health information for monitoring",
@@ -988,7 +988,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9d0c3083aaed2ba656ca1d6539e0938b",
+            "collectionId": "48caf06c093cf0b2942fcfe6fd7bc182",
             "rawModeData": ""
         }
     ]
