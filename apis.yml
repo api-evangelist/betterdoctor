@@ -1,8 +1,25 @@
 aid: betterdoctor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/betterdoctor.png
 name: BetterDoctor
-description: BetterDoctor is a company surfaced as a portfolio company of 500-global, uncork-capital and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: BetterDoctor Inc. was a San Francisco health-technology company (founded 2012) that built a
+  provider data verification and directory-accuracy platform, helping health plans keep their provider
+  directories current while letting clinicians attest to and manage their own practice information. Its
+  original public API surfaced physician, practice-location, specialty, and insurance-plan data for building
+  healthcare provider-directory applications. Backed by 500 Global and Uncork Capital, BetterDoctor was
+  acquired by Quest Analytics, where the product continues as a provider-attestation and network-adequacy
+  service used by 700,000+ healthcare professionals across 360,000+ locations. The standalone developer API
+  has since been retired; betterdoctor.com now redirects to Quest Analytics.
 url: https://raw.githubusercontent.com/api-evangelist/betterdoctor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +28,19 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: quest-analytics
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Provider Directory
+- Health Plans
+- Doctors
+- Data Verification
+- Network Adequacy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/betterdoctor-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/betterdoctor
 - type: Website
   url: https://betterdoctor.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
