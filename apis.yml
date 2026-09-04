@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://betterdoctor.com', status: 301, note: 'declared website redirects to https://questanalytics.com/how-we-help/betterdoctor/ — a different registrable domain (betterdoctor.com -> questanalytics.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/betterdoctor.png
 name: BetterDoctor
 description: BetterDoctor Inc. was a San Francisco health-technology company (founded 2012) that built a
